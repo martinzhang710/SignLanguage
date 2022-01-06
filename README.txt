@@ -9,7 +9,7 @@ FILE STRUCTURE
   --- dataset.py
   --- train.py
   --- test.py
-  --- accuracy.py
+  --- acc.py
   --- app.py
   --- model
     --- *.pt
