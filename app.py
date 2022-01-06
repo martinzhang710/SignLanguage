@@ -1,3 +1,9 @@
+"""
+@ Create on 01-05-2022 
+
+@ author: PENG ZHANG
+"""
+
 import random
 import cv2
 import numpy as np
@@ -8,8 +14,7 @@ from torchvision.models.resnet import resnet18
 def get_func():
     while True:
         num = random.randint(2, 10)
-        add_num1 = []
-        add_num2 = []
+        add_num1, add_num2 = [], []
         for i in range(10):
             for j in range(10):
                 if i+j == num:
@@ -61,7 +66,3 @@ if __name__ == "__main__":
             k = cv2.waitKey(100)
         if k == 27:
             break
-
-
-
-
