@@ -5,9 +5,6 @@
 """
 
 import torch
-
-import numpy as np
-import os
 from PIL import Image
 import cv2
 from torch.utils.data import Dataset, DataLoader
