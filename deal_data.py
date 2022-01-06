@@ -8,6 +8,7 @@
 import os
 import cv2
 
+# labels = "./image/train/labels.txt"
 labels = "./image/test/labels.txt"
 
 with open(labels, "w") as f:
