@@ -8,25 +8,19 @@ from torchvision.models.resnet import resnet18
 def get_func():
     while True:
         num = random.randint(2, 10)
-
         add_num1 = []
         add_num2 = []
-
         for i in range(10):
             for j in range(10):
                 if i+j == num:
                     add_num1.append(i)
                     add_num2.append(j)
-
         if len(add_num1) == 1:
             add_index = 0
         else:
             add_index = random.randint(0, len(add_num1)-1)
-        
         result = add_num1[add_index] + add_num2[add_index]
-
         return f"{add_num1[add_index]} + {add_num2[add_index]} = ", result
-
 
 def draw_func(image):
     text, result = get_func()
